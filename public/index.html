@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+    <h1>Registro de Produtos</h1>
+    <form method="post">
+
+        <label for="produto">Produto:</label>
+        <select id="produto_inversor" name="produto_inversor" required>
+            <option value="-">-</option>
+            <option value="CFW11">CFW11</option>
+            <option value="CFW900">CFW900</option>
+            <option value="CFW500">CFW500</option>
+        </select>
+
+        <label for="numero_serie">Número de Série:</label>
+        <input type="text" id="numero_serie" name="numero_serie" required>
+
+        <label for="material">Material:</label>
+        <input type="text" id="material" name="material" required>
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" required></textarea>
+
+        <label for="ordem">Ordem:</label>
+        <input type="text" id="ordem" name="ordem" required>
+
+        <label for="inspetor">Inspetor:</label>
+        <input type="text" id="inspetor" name="inspetor" required>
+
+        <label for="resultado">Resultado:</label>
+        <select id="resultado" name="resultado" required>
+            <option value="-">-</option>
+            <option value="Aprovado">Aprovado</option>
+            <option value="Reprovado">Reprovado</option>
+        </select>
+
+        <section class="botoes-wrapper"></section>
+        <button onclick="enviar()" type="button" class="botao-form botao-adicionar">Enviar</button>
+        <button onclick="baixar()" type="button" class="botao-form botao-adicionar" id="baixar-btn">Baixar Resultados</button>
+    </form>
+
+    <!-- <table id="produtos-tabela"></table> -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+/* Definindo o estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fundo cinza claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Layout em coluna */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ocupa a altura total da viewport */
+}
+
+/* Estilo do título */
+h1 {
+    text-align: center;
+    color: #003366; /* Azul escuro */
+    padding: 20px;
+    background-color: #e6e6e6; /* Cinza muito claro */
+    margin: 0;
+    width: 100%;
+    position: absolute; /* Fixar o título no topo */
+    top: 0;
+}
+
+/* Estilo do formulário */
+form {
+    background-color: #ffffff; /* Branco */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    box-sizing: border-box;
+    margin-top: 100px; /* Espaço para não sobrepor o título */
+}
+
+/* Estilo dos rótulos e campos */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333; /* Cinza escuro */
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Bordas cinza claro */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* Estilo do botão */
+button {
+    background-color: #003366; /* Azul escuro */
+    color: white; /* Texto branco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #002244; /* Azul mais escuro */
+}
