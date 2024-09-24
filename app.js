@@ -10,7 +10,7 @@ const firebaseConfig = {
     measurementId: "G-R4R52ESNN7"
 };
 
-//teste de commit
+//teste de commit computador WEG
 
 // Inicializando o Firebase:
 firebase.initializeApp(firebaseConfig);
