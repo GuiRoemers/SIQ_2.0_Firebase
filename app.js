@@ -10,6 +10,8 @@ const firebaseConfig = {
     measurementId: "G-R4R52ESNN7"
 };
 
+//teste de commit
+
 // Inicializando o Firebase:
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
